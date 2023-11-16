@@ -10,16 +10,16 @@ source:
   sha256: 35cfa7dd92ddf094bd8781bc66dddc9b3bf445978d5ba89a11a4c373f0cfb781
 
 build:
-  number: 0
+  number: 1
   noarch: python
   script: {{ PYTHON }} -m pip install . -vv
 
 requirements:
   host:
     - pip
-    - python >=3.6
+    - python >=3.8
   run:
-    - python >=3.6
+    - python >=3.8
 
 test:
   imports:
@@ -42,3 +42,6 @@ extra:
   recipe-maintainers:
     - kirill888
     - alexgleith
+    - omad
+    - SpacemanPaul
+    - ArianaB
